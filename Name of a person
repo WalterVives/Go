@@ -1,0 +1,17 @@
+package main
+
+import (
+	"fmt"
+)
+type Person struct {
+	firstName string
+	lastName  string
+	second_lastnamexd string 
+}
+func (p Person) name() string {
+	return p.firstName + " " + p.lastName + " " + p.second_lastnamexd
+}
+func main() {
+	p := Person{"Mario", "Morales", "Zapata"}
+	fmt.Println(p.name())
+}
